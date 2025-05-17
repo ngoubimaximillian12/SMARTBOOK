@@ -1,0 +1,291 @@
+ /* Global Styles */
+ body { 
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #007bff;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Navbar */
+  .navbar { 
+    padding: 1rem 0;
+  }
+  .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #007bff !important;
+  }
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 75vh;
+    background: linear-gradient(45deg, rgba(1, 16, 32, 0.8), rgba(0,200,255,0.8)),
+      url('../images/hero-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-content {
+    z-index: 2;
+    animation: fadeInDown 1s ease-out;
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Section Headings */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #007bff;
+    border-radius: 2px;
+  }
+  
+  /* Services Cards */
+  .services-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  .services-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .services-card img {
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+  }
+  .services-card .card-body {
+    padding: 1.5rem;
+  }
+  .services-card .card-footer {
+    background: transparent;
+    border-top: none;
+  }
+  
+  /* Statistics Section */
+  .stats-section {
+    background-color: #fff;
+    padding: 4rem 0;
+  }
+  .stats {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+  }
+  .stats p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* Mission Statement */
+  .mission {
+    background: #007bff;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .mission p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Testimonials */
+  .testimonial-card {
+    border: none;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  .testimonial-card blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 0;
+    font-style: italic;
+  }
+  .testimonial-card footer {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  /* Login and Register Page*/
+     /* Common CSS for Forms */
+     .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .form-pop-up{
+      margin: 0 !important;
+    }
+
+    .form-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .form-control {
+      border-radius: 4px;
+    }
+    .btn-primary {
+      border-radius: 4px;
+      padding: 10px 20px;
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+/* Service Detail */
+/* Service Detail & Card Styling */
+.service-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.star-rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+/* Related Services Section */
+.related-card {
+  margin-bottom: 30px;
+}
+/* Modal adjustments */
+.modal .form-container {
+  padding: 20px;
+}
+
+/* Services Page */
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.filter-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+.filter-container h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.service-card {
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.service-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.btn-view {
+  font-size: 0.9rem;
+}
+  
+  /* Footer */
+  footer {
+    background: #343a40;
+    color: #ccc;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  footer a {
+    color: #ccc;
+  }
+  footer a:hover {
+    color: #fff;
+  }
+
+  .profile-picture-preview {
+    max-width: 150px;
+    max-height: 100px;
+    border-radius: 50%;
+}
